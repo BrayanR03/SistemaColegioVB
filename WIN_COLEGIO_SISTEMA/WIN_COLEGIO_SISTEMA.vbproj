@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53DB1FE5-A467-47C5-A145-428EA6746177}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WIN_COLEGIO_SISTEMA.My.MyApplication</StartupObject>
+    <RootNamespace>WIN_COLEGIO_SISTEMA</RootNamespace>
+    <AssemblyName>WIN_COLEGIO_SISTEMA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\USER\Documents\RCERO3_GITHUB\AcademyViewSistema\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WIN_COLEGIO_SISTEMA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WIN_COLEGIO_SISTEMA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ICONO_SISTEMA_Fnuevo_logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>70C863BE3BD5FAE65E2EE55312524BB39138EEC5</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WIN_COLEGIO_SISTEMA_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLASES\Alumno.vb" />
+    <Compile Include="CLASES\Apoderado.vb" />
+    <Compile Include="CLASES\Areas.vb" />
+    <Compile Include="CLASES\Asistencias.vb" />
+    <Compile Include="CLASES\Docente.vb" />
+    <Compile Include="CLASES\Grado.vb" />
+    <Compile Include="CLASES\GradoSeccion.vb" />
+    <Compile Include="CLASES\Seccion.vb" />
+    <Compile Include="DATOS\Conexion.vb" />
+    <Compile Include="DATOS\LoginDAO.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PRESENTACION\ALUMNO\AreasRegistradas.Designer.vb">
+      <DependentUpon>AreasRegistradas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\ALUMNO\AreasRegistradas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\ALUMNO\DatosAlumno.Designer.vb">
+      <DependentUpon>DatosAlumno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\ALUMNO\DatosAlumno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\ALUMNO\ListarAsistencias.Designer.vb">
+      <DependentUpon>ListarAsistencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\ALUMNO\ListarAsistencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\ALUMNO\ReporteAlumnoAsistencias.Designer.vb">
+      <DependentUpon>ReporteAlumnoAsistencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\ALUMNO\ReporteAlumnoAsistencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\APODERADO\DatosApoderado.Designer.vb">
+      <DependentUpon>DatosApoderado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\APODERADO\DatosApoderado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\APODERADO\ReporteNotas.Designer.vb">
+      <DependentUpon>ReporteNotas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\APODERADO\ReporteNotas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\DOCENTE\DatosDocente.Designer.vb">
+      <DependentUpon>DatosDocente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\DOCENTE\DatosDocente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\DOCENTE\ListaAsistencias.Designer.vb">
+      <DependentUpon>ListaAsistencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\DOCENTE\ListaAsistencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\DOCENTE\RegistrarAsistencia.Designer.vb">
+      <DependentUpon>RegistrarAsistencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\DOCENTE\RegistrarAsistencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\DOCENTE\RegistrarNotas.Designer.vb">
+      <DependentUpon>RegistrarNotas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\DOCENTE\RegistrarNotas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\APODERADO\ReporteAsistencias.Designer.vb">
+      <DependentUpon>ReporteAsistencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\APODERADO\ReporteAsistencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\DOCENTE\RegistrarReporteFinal.Designer.vb">
+      <DependentUpon>RegistrarReporteFinal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\DOCENTE\RegistrarReporteFinal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\ALUMNO\MenuAlumno.Designer.vb">
+      <DependentUpon>MenuAlumno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\ALUMNO\MenuAlumno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\APODERADO\MenuApoderado.Designer.vb">
+      <DependentUpon>MenuApoderado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\APODERADO\MenuApoderado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\DOCENTE\MenuDocente.Designer.vb">
+      <DependentUpon>MenuDocente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\DOCENTE\MenuDocente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESENTACION\ALUMNO\AreasRegistradas.resx">
+      <DependentUpon>AreasRegistradas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESENTACION\ALUMNO\DatosAlumno.resx">
+      <DependentUpon>DatosAlumno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESENTACION\ALUMNO\ListarAsistencias.resx">
+      <DependentUpon>ListarAsistencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESENTACION\ALUMNO\MenuAlumno.resx">
+      <DependentUpon>MenuAlumno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESENTACION\ALUMNO\ReporteAlumnoAsistencias.resx">
+      <DependentUpon>ReporteAlumnoAsistencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESENTACION\APODERADO\DatosApoderado.resx">
+      <DependentUpon>DatosApoderado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESENTACION\APODERADO\MenuApoderado.resx">
+      <DependentUpon>MenuApoderado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESENTACION\APODERADO\ReporteNotas.resx">
+      <DependentUpon>ReporteNotas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESENTACION\DOCENTE\DatosDocente.resx">
+      <DependentUpon>DatosDocente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESENTACION\DOCENTE\ListaAsistencias.resx">
+      <DependentUpon>ListaAsistencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESENTACION\DOCENTE\MenuDocente.resx">
+      <DependentUpon>MenuDocente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESENTACION\DOCENTE\RegistrarAsistencia.resx">
+      <DependentUpon>RegistrarAsistencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESENTACION\DOCENTE\RegistrarNotas.resx">
+      <DependentUpon>RegistrarNotas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESENTACION\APODERADO\ReporteAsistencias.resx">
+      <DependentUpon>ReporteAsistencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESENTACION\DOCENTE\RegistrarReporteFinal.resx">
+      <DependentUpon>RegistrarReporteFinal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRESENTACION\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="WIN_COLEGIO_SISTEMA_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ICONO_SISTEMA_Fnuevo_logo.ico" />
+    <Content Include="Resources\Alumno.png" />
+    <Content Include="Resources\Docente.png" />
+    <Content Include="Resources\LOGO - copia.png" />
+    <Content Include="Resources\logo_login.png" />
+    <Content Include="Resources\nuevo_logo.jpg" />
+    <Content Include="Resources\_Fnuevo_logo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
